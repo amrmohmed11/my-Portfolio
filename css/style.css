@@ -1,0 +1,364 @@
+body {
+  background: black;
+  font-family: var(--arabic-font-two);
+}
+:root {
+  --main-color: rgb(242 109 80);
+  --arabic-font: "Mada", sans-serif;
+  --arabic-font-two: "Changa", sans-serif;
+  --background-overlay: rgba(0, 0, 0, 0.671);
+}
+/* start navbar */
+.navbar-brand {
+  font-size: 1.5rem;
+  font-family: var(--arabic-font-two);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.nav-link {
+  font-family: var(--arabic-font);
+  font-weight: 700;
+}
+.container:nth-child(1) {
+  margin-bottom: 0;
+}
+.container {
+  margin-bottom: 10rem;
+}
+.section-title {
+  color: #fff;
+  font-family: var(--arabic-font-two);
+  text-align: center;
+  margin-bottom: 5rem;
+}
+/* end navbar */
+/* start home */
+.home {
+  min-height: 100vh;
+  background: url("../img/pexels-josh-sorenson-1714208.jpg") no-repeat;
+  background-position: center top;
+  background-size: cover;
+  position: relative;
+}
+.home .overlay {
+  width: 100%;
+  height: 100%;
+  background: var(--background-overlay);
+  position: absolute;
+  box-shadow: inset 0px 0px 15px 10px var(--background-overlay);
+}
+.home .home-info {
+  min-width: 30rem;
+  color: #fff;
+  position: absolute;
+  top: 25%;
+  right: 0;
+  z-index: 5;
+  padding: 0.5rem;
+}
+.home .home-info .link-icon {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+.home .home-info .link-icon a svg {
+  color: gray;
+  margin: 1.5rem;
+}
+.home .home-info .info-text {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.home .home-info .info-text h2 {
+  font-size: 4.5rem;
+  font-family: var(--arabic-font-two);
+}
+.home .home-info .box-job {
+  background: transparent;
+  border: 0.3rem solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  padding: 1rem 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+.home .home-info .box-job p {
+  font-size: 3rem;
+  font-family: var(--arabic-font-two);
+  margin-bottom: 0;
+}
+.home .home-info .box-job::after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  content: "Front End Developer";
+  position: absolute;
+  top: 0%;
+  right: -100%;
+  font-size: 3rem;
+  font-family: var(--arabic-font-two);
+  background: #fff;
+  color: #000;
+  transition: 1s;
+}
+.home .home-info .box-job:hover::after {
+  top: 0;
+  right: 0;
+}
+/* start my-services */
+.my-services {
+  position: relative;
+  text-align: center;
+}
+.card {
+  background-color: transparent;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.my-services .row {
+  margin-top: 5rem !important;
+  display: flex;
+  justify-content: center;
+}
+.card img {
+  height: 5rem;
+  width: 5rem;
+}
+.card .card-body .card-title,
+.card .card-body .card-text {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  transition: 1s;
+}
+/* start about */
+.about {
+  position: relative;
+}
+.about .about-container {
+  width: 50%;
+  color: #fff;
+  text-align: right;
+  margin: auto;
+}
+.about .about-container .hello {
+  border: 0.3rem solid #fff;
+  margin-bottom: 2rem;
+  padding: 1rem 1.5rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about .about-container .hello p {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+.about .about-container .about-text p {
+  line-height: 2rem;
+}
+.about .about-container .about-info {
+  width: 100%;
+}
+.about .about-container .about-info .info-card {
+  width: 50%;
+  display: inline-block;
+}
+.about .about-container .about-info .info-card.float-left {
+  float: left;
+}
+.about .about-container .about-info .info-card h2 {
+  font-size: 1rem;
+  color: var(--main-color);
+}
+.about .about-container .about-text button {
+  position: relative;
+  width: 6rem;
+  height: 3rem;
+  border: none;
+  overflow: hidden;
+  background: transparent;
+}
+.about .about-container .about-text button::after,
+.about .about-container .about-text button::before {
+  content: "راسلني";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transition: 0.3s;
+}
+.about .about-container .about-text button::after {
+  top: 0;
+  right: 0;
+}
+.about .about-container .about-text button::before {
+  top: 0;
+  left: -100%;
+  background: #af432b;
+}
+.about .about-container .about-text button:hover::after {
+  right: -100%;
+}
+.about .about-container .about-text button:hover::before {
+  left: 0;
+}
+/* start img block */
+.container .img-block {
+  width: 100%;
+  height: 10rem;
+  background: url("../img/bg-keyboard.jpg") no-repeat center var(--main-color);
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.container .img-block .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--background-overlay);
+}
+.container .img-block p {
+  position: absolute;
+  z-index: 5;
+  margin-bottom: 0 !important;
+  font-size: 2rem;
+}
+/* start skill */
+.skill {
+  position: relative;
+}
+.skill .skill-container {
+  width: 80%;
+  text-align: right;
+  margin: auto;
+  position: relative;
+  /* background: green; */
+}
+.skill .skill-container .skill-title {
+  color: #fff;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.skill .skill-container .html,
+.skill .skill-container .css,
+.skill .skill-container .js,
+.skill .skill-container .bootstrap {
+  height: 0.3rem;
+  background: var(--main-color);
+  display: inline-block;
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+.skill .skill-container .html,
+.skill .skill-container .bootstrap {
+  width: 90%;
+}
+.skill .skill-container .css {
+  width: 80%;
+}
+.skill .skill-container .js {
+  width: 50%;
+}
+.skill .skill-container .html::before,
+.skill .skill-container .css::before,
+.skill .skill-container .js::before,
+.skill .skill-container .bootstrap::before {
+  width: 4rem;
+  height: 2rem;
+  position: absolute;
+  left: -4rem;
+  top: calc(-2rem + 0.3rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #fff;
+  border: 0.2rem solid var(--main-color);
+}
+.skill .skill-container .html::before,
+.skill .skill-container .bootstrap::before {
+  content: "90%";
+}
+.skill .skill-container .css::before {
+  content: "80%";
+}
+.skill .skill-container .js::before {
+  content: "50%";
+}
+/* start my work */
+.my-work {
+  position: relative;
+}
+.my-work .row {
+  width: 100%;
+  margin: 0;
+}
+.my-work .row .my-work-card {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 5rem;
+}
+.my-work .row .my-work-card .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: var(--bs-gutter-x) * 5;
+  transition: 0.3s;
+  bottom: 0%;
+  right: -200%;
+  z-index: 5;
+}
+.my-work .row .my-work-card:hover .overlay {
+  background-color: var(--background-overlay);
+  right: 0;
+}
+.my-work .row .my-work-card img {
+  width: 100%;
+  transition: 0.5s;
+}
+.my-work .row .my-work-card:hover img {
+  transform: scale(2, 2) rotate(-30deg);
+}
+.my-work .row .my-work-card a {
+  position: absolute;
+  width: 6rem;
+  height: 3rem;
+  z-index: 55;
+  left: calc((100% - 6rem) / 2);
+  bottom: -100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--main-color);
+  color: #fff;
+  text-decoration: none;
+  font-family: var(--arabic-font-two);
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+.my-work .row .my-work-card:hover a {
+  bottom: calc((100% - 3rem) / 2);
+}
+.my-work .row .my-work-card a:hover {
+  transform: scale(1.1, 1.1);
+}
+/* end my work */

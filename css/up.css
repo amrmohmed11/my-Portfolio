@@ -1,0 +1,43 @@
+.up {
+  width: 3rem;
+  height: 3rem;
+  position: fixed;
+  right: -200vh;
+  bottom: 2rem;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.show {
+  right: 2rem;
+}
+.up::after {
+  background: #af432b;
+  left: -100%;
+  top: 0;
+}
+.up::before {
+  background: var(--main-color);
+  right: 0%;
+  top: 0;
+}
+.up::before,
+.up::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f062";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.up:hover::after {
+  left: 0;
+}
+.up:hover::before {
+  right: -100%;
+}

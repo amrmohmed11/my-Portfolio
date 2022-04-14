@@ -1,0 +1,47 @@
+@media only screen and (max-width: 600px) {
+  /* start home */
+  .home .home-info {
+    min-width: auto;
+  }
+  .home .home-info .info-text {
+    justify-content: center;
+  }
+  .home .home-info .info-text h2 {
+    font-size: 2rem;
+  }
+  .home .home-info .box-job p {
+    font-size: 1rem;
+  }
+  .home .home-info .box-job::after {
+    font-size: 1rem;
+  }
+  /* end home */
+  /* start  my services */
+  .my-services .row {
+    margin-top: 3.5rem !important;
+  }
+  /* end my services */
+  /* start about */
+  .about .about-container{
+    width: auto;
+  }
+  .about .about-container .about-text{
+    width: 90%;
+  }
+  .about .about-container .about-info .info-card {
+    width: 100%;
+  }
+  /* end about */
+  /* start img block */
+  .container .img-block p{
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 600px) {
+}
+@media only screen and (min-width: 1000px) {
+  .navbar-collapse {
+    position: absolute;
+    right: 5rem;
+  }
+}
