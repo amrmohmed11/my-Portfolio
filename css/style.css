@@ -362,3 +362,21 @@ body {
   transform: scale(1.1, 1.1);
 }
 /* end my work */
+/* start footer */
+.container-fluid.footer {
+  margin-bottom: 0;
+  background-color: #fff;
+}
+.container-fluid footer {
+  height: 5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 1rem;
+}
+.container-fluid.footer p {
+  margin-bottom: 0;
+}
+.container-fluid footer svg{
+  color: red;
+}
