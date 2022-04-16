@@ -3,12 +3,12 @@
   height: 3rem;
   position: fixed;
   right: -200vh;
-  bottom: 2rem;
+  bottom: 5vh;
   overflow: hidden;
   transition: 0.5s;
 }
 .show {
-  right: 2rem;
+  right: 5vh;
 }
 .up::after {
   background: #af432b;
