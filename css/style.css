@@ -251,7 +251,6 @@ body {
   text-align: right;
   margin: auto;
   position: relative;
-  /* background: green; */
 }
 .skill .skill-container .skill-title {
   color: #fff;
@@ -268,15 +267,48 @@ body {
   position: relative;
   margin-bottom: 2.5rem;
 }
-.skill .skill-container .html,
-.skill .skill-container .bootstrap {
+@keyframes HtmlAndBootstrap {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+@keyframes cssAnima {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 80%;
+  }
+}
+@keyframes jsAnima {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 50%;
+  }
+}
+.skill .skill-container .html.animation,
+.skill .skill-container .bootstrap.animation {
   width: 90%;
+  animation-name: HtmlAndBootstrap;
+  animation-duration: 1s;
+  animation-direction: normal;
 }
-.skill .skill-container .css {
+.skill .skill-container .css.animation {
   width: 80%;
+  animation-name: cssAnima;
+  animation-duration: 1s;
+  animation-direction: normal;
 }
-.skill .skill-container .js {
+.skill .skill-container .js.animation {
   width: 50%;
+  animation-name: jsAnima;
+  animation-duration: 1s;
+  animation-direction: normal;
 }
 .skill .skill-container .html::before,
 .skill .skill-container .css::before,
@@ -377,6 +409,6 @@ body {
 .container-fluid.footer p {
   margin-bottom: 0;
 }
-.container-fluid footer svg{
+.container-fluid footer svg {
   color: red;
 }
